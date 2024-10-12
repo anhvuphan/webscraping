@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quét và Phân Tích Dữ Liệu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            color: #007bff;
+            margin-bottom: 30px;
+        }
+        .url-input {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Quét và Phân Tích Dữ Liệu Website</h1>
+        <form action="/process_urls" method="POST">
+            <div class="url-input">
+                <input type="url" name="urls" class="form-control" placeholder="Nhập URL 1" required>
+            </div>
+            <div class="url-input">
+                <input type="url" name="urls" class="form-control" placeholder="Nhập URL 2" required>
+            </div>
+            <div class="url-input">
+                <input type="url" name="urls" class="form-control" placeholder="Nhập URL 3" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Mô tả nội dung:</label>
+                <input type="text" name="description" class="form-control" id="description" placeholder="Nhập mô tả" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Quét Dữ Liệu</button>
+        </form>
+    </div>
+</body>
+</html>
